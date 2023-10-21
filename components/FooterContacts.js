@@ -1,0 +1,73 @@
+import {React, useState} from 'react'
+import { List, Modal, Button } from 'semantic-ui-react'
+
+const FooterContacts = () => {
+const [openModalRules, setOpenModalRules] = useState(false);
+  // show the rules
+  const handleShowRules = () => {
+    setOpenModalRules(true);
+  }
+  return (
+    <>
+<List style={{padding: "20px"}}>
+<List.Item>
+  <List.Icon name='game' />
+  <List.Content>
+  <a onClick={handleShowRules}>How to play</a>
+  </List.Content>
+</List.Item>
+<List.Item>
+  <List.Icon name='users' />
+  <List.Content>
+  <a target='_blank' href="https://www.gamelp.bet">Home</a>
+  </List.Content>
+</List.Item>
+<List.Item>
+  <List.Icon name='mail' />
+  <List.Content>
+    <a href='mailto:gamelpbet@gmail.com'>gamelpbet@gmail.com</a>
+  </List.Content>
+</List.Item>
+<List.Item >
+  <List.Icon name='linkify' />
+  <List.Content>
+    <a target='_blank' href="https://telegra.ph/GameFi-Liquidity-Providing-10-17">Learn more about the GameFi Liquidity Providing</a>
+  </List.Content>
+</List.Item>
+<List.Item>
+  <List.Icon name='copyright outline' />
+  <List.Content>
+    All Rights Reserved. 2023
+  </List.Content>
+</List.Item>
+</List>
+
+ {/* PopUp Rules */}
+ <Modal
+      centered={false}
+      open={openModalRules}
+      >
+      <Modal.Header>Welcome to the Game LP!</Modal.Header>
+      <Modal.Content>
+        <Modal.Description style={{wordBreak: 'break-word'}}>
+          Please, connect Metamask to deposit or play game. <br></br><br></br>
+           First of all you can get LP ($GAMELP) - just make a deposit. <p></p>
+           Secondly, play the game "rock - paper - scissors" <br></br>
+           to get x2 to your bet. <p></p>
+           Third, when you receive LP ($GAMELP) <br></br>
+           you can return your liquidity and <br></br>
+           bank/casino income at ANY TIME!<p></p>
+           Need to know <br></br>
+           when you are with GAMELP - <br></br>
+           YOU ARE THE PART OF BANK !!! <p></p>
+        </Modal.Description>
+      </Modal.Content>
+      <Modal.Actions>
+        <Button onClick={() => setOpenModalRules(false)}>OK</Button>
+      </Modal.Actions>
+     </Modal>
+</>
+   )
+  }
+
+export default FooterContacts;
