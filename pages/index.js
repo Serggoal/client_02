@@ -2278,7 +2278,7 @@ useEffect(() => {
       <Modal.Content>
         <Modal.Description style={{wordBreak: 'break-word'}}>
           You've got {(depo / rateDepo * 10**18) / 10**18} LP tokens <br></br><br></br>
-           Now you have {userTokens} $GAMT. <p></p>
+           Now you have {userTokens} $GAMT (minus bank/partner fee). <p></p>
            YOU ARE THE PART OF BANK !!! <p></p>
         </Modal.Description>
       </Modal.Content>
@@ -2336,7 +2336,7 @@ useEffect(() => {
           <p></p>
           <p>another transaction in order to receive</p>
           <p></p>
-          <p>a reward: ETH or $GAMT</p>
+          <p>a reward: MATIC or $GAMT</p>
           <p></p>
           </Segment>
       </TransitionablePortal>
