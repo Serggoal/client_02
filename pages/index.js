@@ -1556,7 +1556,7 @@ const Index = () => {
         setIsActiveShowButton(false);
     }
     } else {
-      setModalContent('Для игры нужно расширение Metamask');
+      setModalContent('For the deposit & game need Metamask');
       setOpenModal(true);
     }
   };

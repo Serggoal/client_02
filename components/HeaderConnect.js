@@ -20,7 +20,7 @@ const HeaderConnect = (props) => {
           </Menu.Item>
           
           <Menu.Item>
-          {!props.account ? <Button primary style={{marginRight: "15px"}}>Your Eth</Button>
+          {!props.account ? <Button primary style={{marginRight: "15px"}}>Yours</Button>
            : 
            <Button primary style={{marginRight: "15px"}} animated='fade'>
             <Button.Content visible><Icon name='ethereum' />{miniNumber}</Button.Content>
