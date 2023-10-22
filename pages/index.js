@@ -2162,9 +2162,9 @@ useEffect(() => {
     disabled={isActiveShowButton}
     icon='ethereum'
     iconPosition='left'
-    label={{ tag: true, content: 'Your bet.' }}
+    label={{ tag: true, content: 'MaxBet: bank/4' }}
     labelPosition='right'
-    placeholder='0.00      No less 0.01'
+    placeholder='0.00           more 0.01'
     onChange={(e) => setBet(e.target.value)}
   />
   </Segment>
