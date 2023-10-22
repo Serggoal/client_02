@@ -2277,8 +2277,8 @@ useEffect(() => {
       <Modal.Header>Thanks for deposit!</Modal.Header>
       <Modal.Content>
         <Modal.Description style={{wordBreak: 'break-word'}}>
-          You've got {(depo / rateDepo * 10**18) / 10**18} LP tokens <br></br><br></br>
-           Now you have {userTokens} $GAMT (minus bank/partner fee). <p></p>
+          You've got {(depo / rateDepo * 10**18) / 10**18} LP tokens (minus bank/partner fee). <br></br><br></br>
+           Now you have {userTokens} $GAMT. <p></p>
            YOU ARE THE PART OF BANK !!! <p></p>
         </Modal.Description>
       </Modal.Content>
