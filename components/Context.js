@@ -8,4 +8,4 @@ function Provider(props) {
   return <Context.Provider value={theme}>{props.children}</Context.Provider>;
 }
 
-export { Context, Provider };
+export default { Context, Provider };
