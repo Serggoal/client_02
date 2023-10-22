@@ -31,7 +31,13 @@ const [openModalRules, setOpenModalRules] = useState(false);
 <List.Item >
   <List.Icon name='linkify' />
   <List.Content>
-    <a target='_blank' href="https://telegra.ph/GameFi-Liquidity-Providing-10-17">Learn more about the GameFi Liquidity Providing</a>
+    <a target='_blank' href="https://telegra.ph/GameFi-Liquidity-Providing-10-17">More about GameFi Liquidity Providing</a>
+  </List.Content>
+</List.Item>
+<List.Item >
+  <List.Icon name='linkify' />
+  <List.Content>
+    <a target='_blank' href="https://polygonscan.com/address/0x630df539848b0753B377Af890f0dB4bA06e2805d">$GAMELP: 0x630df539848b...bA06e2805d</a>
   </List.Content>
 </List.Item>
 <List.Item>
