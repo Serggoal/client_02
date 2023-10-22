@@ -1,4 +1,4 @@
-import { Button, Menu, Icon, List } from "semantic-ui-react";
+import { Button, Menu, Icon } from "semantic-ui-react";
 
 const HeaderConnect = (props) => {
 

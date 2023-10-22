@@ -9,9 +9,6 @@ import Score from "../components/Score";
 import HeaderUp from "../components/HeaderUp";
 import HeaderConnect from "../components/HeaderConnect";
 import AllStats from "../components/AllStats";
-import AbiChainlink from "../abi/AbiChainlink";
-import AbiMainLP from "../abi/AbiChainlink";
-import AbiStoneGame from "../abi/AbiChainlink";
 import { Input, Modal, Button, List, Segment, TransitionablePortal, Header} from "semantic-ui-react";
 
 const Index = () => {
