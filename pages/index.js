@@ -75,7 +75,7 @@ const Index = () => {
       const network = await provider.getNetwork();
 
       if (network.chainId != 137) {
-        setModalContent('Для игры необходимо выбрать сеть Mumbai');
+        setModalContent('For the game need Poligon network');
         setOpenModal(true);
       } else {
         const newSigner = await provider.getSigner();
