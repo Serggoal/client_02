@@ -1556,7 +1556,7 @@ const Index = () => {
         setIsActiveShowButton(false);
     }
     } else {
-      setModalContent('For the deposit & game need Metamask');
+      setModalContent('For the deposit & game need Metamask. For mobile: open /appstone.site/ inside the mobile wallet browser');
       setOpenModal(true);
     }
   };
