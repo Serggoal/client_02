@@ -2242,7 +2242,7 @@ useEffect(() => {
         <Modal.Description style={{wordBreak: 'break-word'}}>
           for your play and attention to the project <br></br><br></br>
           You have received a reward: <br></br><br></br>
-           {bet / rateGame} LP tokens <br></br><br></br>
+           {bet / rateGame} LP tokens (minus bank/partner fee). <br></br><br></br>
            Now you have {userTokens} $GAMT <p></p>
            LET'S TRY AGAIN !!! <p></p>
         </Modal.Description>
