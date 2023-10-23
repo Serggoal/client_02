@@ -61,7 +61,7 @@ const Index = () => {
 
     const [txhash, setTxhash] = useState("");
     const miniTxhash = (txhash).substring(0, 5) + '.....' + (txhash).slice(45);
-    const hashLink = 'https://mumbai.polygonscan.com/tx/';
+    const hashLink = 'https://polygonscan.com/tx/';
     const hashLinkPlus = hashLink + txhash;
 
     const userReward = userTokens / totalTokens * balanceOfContract;
