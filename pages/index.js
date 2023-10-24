@@ -75,7 +75,7 @@ const Index = () => {
       const network = await provider.getNetwork();
 
       if (network.chainId != 137) {
-        setModalContent('For the game need Poligon network');
+        setModalContent('For the game need Poligon newtwork');
         setOpenModal(true);
       } else {
         const newSigner = await provider.getSigner();
@@ -84,7 +84,7 @@ const Index = () => {
         
         setContract(
           new ethers.Contract(
-            '0x630df539848b0753B377Af890f0dB4bA06e2805d',[
+            '0x7Bf2b791d5E8E46e2506a0d2C4a74A3E8d243B54',[
                 {
                     "inputs": [],
                     "stateMutability": "nonpayable",
@@ -271,42 +271,6 @@ const Index = () => {
                     ],
                     "name": "GetPartnerFee",
                     "type": "event"
-                },
-                {
-                    "inputs": [
-                        {
-                            "internalType": "address",
-                            "name": "_player",
-                            "type": "address"
-                        },
-                        {
-                            "internalType": "uint256",
-                            "name": "amount",
-                            "type": "uint256"
-                        }
-                    ],
-                    "name": "mint",
-                    "outputs": [],
-                    "stateMutability": "nonpayable",
-                    "type": "function"
-                },
-                {
-                    "inputs": [
-                        {
-                            "internalType": "address",
-                            "name": "_player",
-                            "type": "address"
-                        },
-                        {
-                            "internalType": "uint256",
-                            "name": "_reward",
-                            "type": "uint256"
-                        }
-                    ],
-                    "name": "payReward",
-                    "outputs": [],
-                    "stateMutability": "nonpayable",
-                    "type": "function"
                 },
                 {
                     "anonymous": false,
@@ -841,7 +805,7 @@ const Index = () => {
         );
         setContractGameSinger(
           new ethers.Contract(
-            '0x8B64fc795f7Bb08c3025431C3C37E11C2ECdAAF8',[
+            '0x0F1112AD17ed91245A3Acd013b4dF0eA855bFeF9',[
                 {
                     "inputs": [],
                     "name": "depo",
@@ -1028,30 +992,6 @@ const Index = () => {
                     "type": "function"
                 },
                 {
-                    "inputs": [
-                        {
-                            "internalType": "uint256",
-                            "name": "_userChoice",
-                            "type": "uint256"
-                        },
-                        {
-                            "internalType": "uint256",
-                            "name": "_botChoice",
-                            "type": "uint256"
-                        }
-                    ],
-                    "name": "checkWinner",
-                    "outputs": [
-                        {
-                            "internalType": "uint256",
-                            "name": "",
-                            "type": "uint256"
-                        }
-                    ],
-                    "stateMutability": "pure",
-                    "type": "function"
-                },
-                {
                     "inputs": [],
                     "name": "currentRandomWord",
                     "outputs": [
@@ -1207,13 +1147,13 @@ const Index = () => {
                     "stateMutability": "view",
                     "type": "function"
                 }
-            ] ,
+            ],
             newSigner
           )
         );
         setContractChainlinkSinger(
           new ethers.Contract(
-            '0x901d6c41c64ffe9292A42fC988eB4A4388b6A584',[
+            '0xa4F89aCbF9f1ff14dDddAfe87fb766Af8C593176',[
                 {
                     "inputs": [
                         {
@@ -1548,7 +1488,7 @@ const Index = () => {
             newSigner
           )
         );
-        const balanceOfContract = await provider.getBalance("0x630df539848b0753B377Af890f0dB4bA06e2805d");
+        const balanceOfContract = await provider.getBalance("0x7Bf2b791d5E8E46e2506a0d2C4a74A3E8d243B54");
         const balanceOfContract2= ethers.formatEther(balanceOfContract)
         setBalanceOfContract(balanceOfContract2.toString());
 
@@ -1587,7 +1527,7 @@ const Index = () => {
           const totalTokens2= ethers.formatEther(totalTokens);
           setTotalTokens(totalTokens2.toString()); 
         
-          const balanceOfContract = await provider.getBalance("0x630df539848b0753B377Af890f0dB4bA06e2805d");
+          const balanceOfContract = await provider.getBalance("0x7Bf2b791d5E8E46e2506a0d2C4a74A3E8d243B54");
           const balanceOfContract2= ethers.formatEther(balanceOfContract);
           setBalanceOfContract(balanceOfContract2.toString());
 
@@ -1743,15 +1683,15 @@ useEffect(() => {
        
         } catch (error) {
           if (error.code == 'INSUFFICIENT_FUNDS') {
-            setModalContent('Недостаточно средств!');
+            setModalContent('INSUFFICIENT_FUNDS!');
             setOpenModal(true);
           }
           if (error.code == 4001) {
-            setModalContent('Транкзация отклонена пользователем');
+            setModalContent('The transaction was rejected by the user');
             setOpenModal(true);
           }
           if (error.code == 'CALL_EXCEPTION') {
-            setModalContent('Ошибка транкзации, попробуйте еще раз');
+            setModalContent('Transaction error, try again');
             setOpenModal(true);
           }
           console.error("error: ", error);
@@ -1833,15 +1773,15 @@ useEffect(() => {
     
       } catch (error) {
         if (error.code == 'INSUFFICIENT_FUNDS') {
-          setModalContent('Недостаточно средств!');
+          setModalContent('INSUFFICIENT_FUNDS!');
           setOpenModal(true);
         }
         else if (error.code == 4001) {
-          setModalContent('Транкзация отклонена пользователем');
+          setModalContent('The transaction was rejected by the user');
           setOpenModal(true);
         }
         else if (error.code == 'CALL_EXCEPTION') {
-          setModalContent('Ошибка транкзации, попробуйте еще раз');
+          setModalContent('Transaction error, try again');
           setOpenModal(true);
         }
         console.error("error: ", error);
@@ -2223,7 +2163,7 @@ useEffect(() => {
       <Modal.Content>
         <Modal.Description style={{wordBreak: 'break-word'}}>
            YOU ARE WINNER !!! <br></br><br></br>
-           You've got profit {bet * 2} Eth.<p></p>
+           You've got profit {bet * 2} MATIC.<p></p>
            LET'S TRY AGAIN !!! <p></p>
         </Modal.Description>
       </Modal.Content>
@@ -2243,7 +2183,7 @@ useEffect(() => {
           for your play and attention to the project <br></br><br></br>
           You have received a reward: <br></br><br></br>
            {bet / rateGame} LP tokens (minus bank/partner fee). <br></br><br></br>
-           Now you have {userTokens} $GAMT <p></p>
+           Now you have {userTokens} $GAMELP <p></p>
            LET'S TRY AGAIN !!! <p></p>
         </Modal.Description>
       </Modal.Content>
@@ -2278,7 +2218,7 @@ useEffect(() => {
       <Modal.Content>
         <Modal.Description style={{wordBreak: 'break-word'}}>
           You've got {(depo / rateDepo * 10**18) / 10**18} LP tokens (minus bank/partner fee). <br></br><br></br>
-           Now you have {userTokens} $GAMT. <p></p>
+           Now you have {userTokens} $GAMELP. <p></p>
            YOU ARE THE PART OF BANK !!! <p></p>
         </Modal.Description>
       </Modal.Content>
@@ -2336,7 +2276,7 @@ useEffect(() => {
           <p></p>
           <p>another transaction in order to receive</p>
           <p></p>
-          <p>a reward: MATIC or $GAMT</p>
+          <p>a reward: MATIC or $GAMELP</p>
           <p></p>
           </Segment>
       </TransitionablePortal>

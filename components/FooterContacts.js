@@ -37,7 +37,7 @@ const [openModalRules, setOpenModalRules] = useState(false);
 <List.Item >
   <List.Icon name='linkify' />
   <List.Content>
-    <a target='_blank' href="https://polygonscan.com/address/0x630df539848b0753B377Af890f0dB4bA06e2805d">$GAMELP: 0x630df539848b...bA06e2805d</a>
+  <a target='_blank' href="https://polygonscan.com/address/0x7bf2b791d5e8e46e2506a0d2c4a74a3e8d243b54">$GAMELP: 0x7bf2b791d...d243b54</a>
   </List.Content>
 </List.Item>
 <List.Item>
