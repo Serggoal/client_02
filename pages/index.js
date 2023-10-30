@@ -2008,7 +2008,7 @@ useEffect(() => {
            size='small'
            label={{ tag: true, content: 'Deposit to LP!' }}
            labelPosition='right'
-           placeholder='0.0        ...No less 0.1'
+           placeholder='0.0        ...No less 1.0'
            onChange={(e) => setDepo(e.target.value)}
           />
          
@@ -2071,7 +2071,7 @@ useEffect(() => {
     iconPosition='left'
     label={{ tag: true, content: 'MaxBet: bank/4' }}
     labelPosition='right'
-    placeholder='0.00           more 0.01'
+    placeholder='0.00           more 0.1'
     onChange={(e) => setBet(e.target.value)}
   />
   </Segment>
