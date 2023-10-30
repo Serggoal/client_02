@@ -2,7 +2,7 @@ import { Menu, Icon, Label, Segment, Dropdown } from "semantic-ui-react";
 
 const AllStats = (props) => {
 
-    const miniTokenPrice = Number(props.stopSupply).toFixed(4);
+    const miniTokenPrice = Number(props.tokenPrice).toFixed(4);
     const miniTolalTokens = Number(props.totalTokens).toFixed(2);
     const miniUserTokens = Number(props.userTokens).toFixed(2);
     const miniNumberRewards = Number(props.userReward).toFixed(4);
