@@ -72,7 +72,7 @@ const Index = () => {
       const provider = new ethers.BrowserProvider(window.ethereum);
       const network = await provider.getNetwork();
 
-      if (network.chainId != 80001) {
+      if (network.chainId != 137) {
         setModalContent('For the game need Polygon newtwork');
         setOpenModal(true);
       } else {
