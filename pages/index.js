@@ -47,7 +47,7 @@ const Index = () => {
     const [provider, setProvider] = useState("");
     const [balanceOfContract, setBalanceOfContract] = useState(0);
     const [minBet, setMinBet] = useState("");
-    const [minDepo, setMinDepo] = useState("");
+    //const [minDepo, setMinDepo] = useState("");
     const [lastRandomId, setLastRandomId] = useState("");
     const [fulfilled, setFulfilled] = useState(0);
     const [roundWinner, setRoundWinner] = useState("");
@@ -1443,9 +1443,9 @@ const Index = () => {
           const balanceAcc2= ethers.formatEther(balanceAcc);
           setBalanceAcc(balanceAcc2.toString());
 
-          const minDepo = await contractGameSinger.minDepo();
-          const minDepo2= ethers.formatEther(minDepo);
-          setMinDepo(minDepo2);
+        //   const minDepo = await contractGameSinger.minDepo();
+        //   const minDepo2= ethers.formatEther(minDepo);
+        //   setMinDepo(minDepo2);
 
           const minBet = await contractGameSinger.minBet();
           const minBet2= ethers.formatEther(minBet);
@@ -1587,7 +1587,7 @@ useEffect(() => {
 
     const handleDepoGame = async () => {
         setIsActiveShowButton(true);
-      if(depo < minDepo) {
+      if(depo < 0.999999999999999999) {
         setModalContent('Incorrect sum. Need more than or equal to 1');
         setOpenModal(true);
         setIsActiveShowButton(false);
