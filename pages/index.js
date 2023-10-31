@@ -64,6 +64,9 @@ const Index = () => {
 
     const userReward = userTokens / totalTokens * balanceOfContract;
 
+    console.log("minDepo :", minDepo);
+    console.log("Depo :", depo);
+
   const initConnection = async () => {
     if (typeof window.ethereum !== 'undefined') {
       const accounts = await window.ethereum.request({
@@ -1590,6 +1593,13 @@ useEffect(() => {
       if(depo < minDepo) {
         setModalContent('Incorrect sum. Need more than or equal to 1');
         setOpenModal(true);
+        setIsActiveShowButton(false);
+        setHuman("");
+        setBot("");
+        setResult("");
+        setResultColor("grey");
+        setResultIcon("game");
+        setIsShowResult(false);
       } else {
         try {
           const tokenPrice = await contract.getTokenPrice();
