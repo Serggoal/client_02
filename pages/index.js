@@ -1445,11 +1445,11 @@ const Index = () => {
 
           const minDepo = await contractGameSinger.minDepo();
           const minDepo2= ethers.formatEther(minDepo);
-          setMinDepo(minDepo2.toString());
+          setMinDepo(minDepo2);
 
           const minBet = await contractGameSinger.minBet();
           const minBet2= ethers.formatEther(minBet);
-          setMinBet(minBet2);
+          setMinBet(minBet2.toString());
 
           const bankroll = await contract.bankroll();
           const bankroll2= ethers.formatEther(bankroll);
