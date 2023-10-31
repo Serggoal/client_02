@@ -14,7 +14,7 @@ const AllStats = (props) => {
 
      <Menu.Item as='a'>
      <Icon name='dollar' /> Token <br></br> price
-     <Label color='red' floating>
+     <Label color='green' floating>
        {miniTokenPrice}
      </Label>
    </Menu.Item>
@@ -26,7 +26,7 @@ const AllStats = (props) => {
    </Menu.Item>
    <Menu.Item as='a'>
      <Icon name='male' /> Your <br></br> tokens 
-     <Label color='teal' floating>
+     <Label color='blue' floating>
        {miniUserTokens}
      </Label>
    </Menu.Item>
@@ -34,13 +34,13 @@ const AllStats = (props) => {
   </Menu> 
  </Segment>
 
- <Segment color='green' textAlign='center'>
+ <Segment color='violet' textAlign='center'>
     <Menu compact>
     <Menu.Item as='a'>
      <Icon name='ethereum' /> Your LP 
-     {props.isConnected && props.userTokens > 0 ? <Label color='green' floating> {miniNumberRewards} </Label>
+     {props.isConnected && props.userTokens > 0 ? <Label color='teal' floating> {miniNumberRewards} </Label>
       :
-      <Label color='green' floating> 0 </Label> }
+      <Label color='teal' floating> 0 </Label> }
    </Menu.Item>
 
 {props.userTokens > 0 ?
