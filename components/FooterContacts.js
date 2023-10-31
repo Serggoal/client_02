@@ -35,10 +35,28 @@ const [openModalRules, setOpenModalRules] = useState(false);
   </List.Content>
 </List.Item>
 <List.Item >
-  <List.Icon name='linkify' />
+  <List.Icon name='hand point down outline' />
   <List.Content>
-  <a target='_blank' href="https://polygonscan.com/address/0xD534125EA08F59857E176e401a3D303f4Bd0E67a">$GAMELP: 0xD534125E...4Bd0E67a</a>
-  </List.Content>                                                                                               
+    All contracts are verified / open source:
+  </List.Content>
+</List.Item>
+<List.Item >
+  <List.Icon name='check' />
+  <List.Content>
+    <a target='_blank' href="https://polygonscan.com/address/0xa4F89aCbF9f1ff14dDddAfe87fb766Af8C593176">Chainlink: 0xa4F89a...C593176</a>
+  </List.Content>
+</List.Item>
+<List.Item >
+  <List.Icon name='check' />
+  <List.Content>
+    <a target='_blank' href="https://polygonscan.com/address/0x7bf2b791d5e8e46e2506a0d2c4a74a3e8d243b54">$GAMELP: 0x7bf2b791d...d243b54</a>
+  </List.Content>
+</List.Item>
+<List.Item >
+  <List.Icon name='check' />
+  <List.Content>
+    <a target='_blank' href="https://polygonscan.com/address/0xB7EB3A80028202a20d5F180a5D08F442ad8f4BA9">StoneGame: 0xB7EB3A...ad8f4BA9</a>
+  </List.Content>
 </List.Item>
 <List.Item>
   <List.Icon name='copyright outline' />
@@ -58,12 +76,18 @@ const [openModalRules, setOpenModalRules] = useState(false);
         <Modal.Description style={{wordBreak: 'break-word'}}>
           Please, connect Metamask to deposit or play game. <br></br><br></br>
            First of all you can get LP ($GAMELP) - just make a deposit. <p></p>
+
            Secondly, play the game "rock - paper - scissors" <br></br>
-           to get x2 to your bet. <p></p>
+           to get x2 to your bet. <br></br>
+           NOTICE: Each game makes a request to the Chainlink,<br></br>
+           the response comes within 15-20 seconds. Therefore, at the moment<br></br>
+           we cannot serve several people at the same time. Only in turn.<p></p>
+
            Third, when you receive LP ($GAMELP) <br></br>
            you can return your liquidity and <br></br>
            bank/casino income at ANY TIME!<p></p>
-           Need to know <br></br>
+
+           Need to know: <br></br>
            when you are with GAMELP - <br></br>
            YOU ARE THE PART OF BANK !!! <p></p>
         </Modal.Description>
