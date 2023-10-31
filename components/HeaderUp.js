@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 const HeaderUp = (props) => {
 
   const [overviewGame, setOverviewGame] = useState("Welcome!!!");
-  const [overviewGame2, setOverviewGame2] = useState("Connect Metamask (Poligon)");
+  const [overviewGame2, setOverviewGame2] = useState("Connect Metamask (Polygon)");
 
   useEffect(() => {
     (async () => {
