@@ -64,9 +64,6 @@ const Index = () => {
 
     const userReward = userTokens / totalTokens * balanceOfContract;
 
-    console.log("minDepo :", minDepo);
-    console.log("Depo :", depo);
-
   const initConnection = async () => {
     if (typeof window.ethereum !== 'undefined') {
       const accounts = await window.ethereum.request({
@@ -1452,7 +1449,7 @@ const Index = () => {
 
           const minBet = await contractGameSinger.minBet();
           const minBet2= ethers.formatEther(minBet);
-          setMinBet(minBet2.toString());
+          setMinBet(minBet2);
 
           const bankroll = await contract.bankroll();
           const bankroll2= ethers.formatEther(bankroll);
