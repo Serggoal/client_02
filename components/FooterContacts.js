@@ -11,17 +11,36 @@ const [openModalRules, setOpenModalRules] = useState(false);
     <>
 <List style={{padding: "20px"}}>
 <List.Item>
-  <List.Icon name='game' />
-  <List.Content>
-  <a onClick={handleShowRules}>How to play</a>
-  </List.Content>
-</List.Item>
-<List.Item>
   <List.Icon name='users' />
   <List.Content>
   <a target='_blank' href="https://www.gamelp.bet">Home</a>
   </List.Content>
 </List.Item>
+<List.Item>
+  <List.Icon name='game' />
+  <List.Content>
+  <a onClick={handleShowRules}>How to play (skinny)</a>
+  </List.Content>
+</List.Item>
+<List.Item>
+  <List.Icon name='check' />
+  <List.Content>
+  <a target='_blank' href="https://telegra.ph/How-to-deposit-10-31">How to deposit</a>
+  </List.Content>
+</List.Item>
+<List.Item>
+  <List.Icon name='check' />
+  <List.Content>
+  <a target='_blank' href="https://telegra.ph/How-to-play-10-31">How to play</a>
+  </List.Content>
+</List.Item>
+<List.Item>
+  <List.Icon name='check' />
+  <List.Content>
+  <a target='_blank' href="https://telegra.ph/How-to-withdrawal-10-31">How to withdrawal</a>
+  </List.Content>
+</List.Item>
+
 <List.Item>
   <List.Icon name='mail' />
   <List.Content>
