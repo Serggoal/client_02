@@ -49,7 +49,7 @@ const [openModalRules, setOpenModalRules] = useState(false);
 <List.Item >
   <List.Icon name='check' />
   <List.Content>
-    <a target='_blank' href="https://polygonscan.com/address/0x7bf2b791d5e8e46e2506a0d2c4a74a3e8d243b54">$GAMELP: 0x7bf2b791d...d243b54</a>
+    <a target='_blank' href="https://polygonscan.com/address/0xD534125EA08F59857E176e401a3D303f4Bd0E67a">$GAMELP: 0xD534125...4Bd0E67a</a>
   </List.Content>
 </List.Item>
 <List.Item >
